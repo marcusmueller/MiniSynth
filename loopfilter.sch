@@ -1,0 +1,146 @@
+EESchema Schematic File Version 4
+LIBS:MiniSynth-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 16 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2500 950  0    50   Input ~ 0
+VTUNE
+Text HLabel 5450 1800 2    50   Input ~ 0
+CP
+Text HLabel 5450 2500 2    50   Input ~ 0
+SW
+$Comp
+L Device:C C37
+U 1 1 5C4DE150
+P 5150 1950
+F 0 "C37" H 5265 1996 50  0000 L CNN
+F 1 "12n" H 5265 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5188 1800 50  0001 C CNN
+F 3 "~" H 5150 1950 50  0001 C CNN
+	1    5150 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C36
+U 1 1 5C4DE1AC
+P 4450 1950
+F 0 "C36" H 4565 1996 50  0000 L CNN
+F 1 "100n" H 4565 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4488 1800 50  0001 C CNN
+F 3 "~" H 4450 1950 50  0001 C CNN
+	1    4450 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5C4DE201
+P 4450 2300
+F 0 "R21" H 4520 2346 50  0000 L CNN
+F 1 "30.1" H 4520 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 2300 50  0001 C CNN
+F 3 "~" H 4450 2300 50  0001 C CNN
+	1    4450 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5C4DE265
+P 4450 2700
+F 0 "R22" H 4520 2746 50  0000 L CNN
+F 1 "91" H 4520 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 2700 50  0001 C CNN
+F 3 "~" H 4450 2700 50  0001 C CNN
+	1    4450 2700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5C4DE2A3
+P 3900 1800
+F 0 "R20" V 3693 1800 50  0000 C CNN
+F 1 "240" V 3784 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3830 1800 50  0001 C CNN
+F 3 "~" H 3900 1800 50  0001 C CNN
+	1    3900 1800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C35
+U 1 1 5C4DE2F1
+P 3400 1950
+F 0 "C35" H 3515 1996 50  0000 L CNN
+F 1 "820p" H 3515 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3438 1800 50  0001 C CNN
+F 3 "~" H 3400 1950 50  0001 C CNN
+	1    3400 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR057
+U 1 1 5C4DE394
+P 5150 2100
+F 0 "#PWR057" H 5150 1850 50  0001 C CNN
+F 1 "GND" H 5155 1927 50  0000 C CNN
+F 2 "" H 5150 2100 50  0001 C CNN
+F 3 "" H 5150 2100 50  0001 C CNN
+	1    5150 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR056
+U 1 1 5C4DE3B2
+P 4450 2850
+F 0 "#PWR056" H 4450 2600 50  0001 C CNN
+F 1 "GND" H 4455 2677 50  0000 C CNN
+F 2 "" H 4450 2850 50  0001 C CNN
+F 3 "" H 4450 2850 50  0001 C CNN
+	1    4450 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR055
+U 1 1 5C4DE3DD
+P 3400 2100
+F 0 "#PWR055" H 3400 1850 50  0001 C CNN
+F 1 "GND" H 3405 1927 50  0000 C CNN
+F 2 "" H 3400 2100 50  0001 C CNN
+F 3 "" H 3400 2100 50  0001 C CNN
+	1    3400 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1800 5150 1800
+Connection ~ 5150 1800
+Wire Wire Line
+	5150 1800 4450 1800
+Connection ~ 4450 1800
+Wire Wire Line
+	4450 1800 4050 1800
+Wire Wire Line
+	3750 1800 3400 1800
+Wire Wire Line
+	4450 2100 4450 2150
+Wire Wire Line
+	4450 2450 4450 2500
+Wire Wire Line
+	4450 2500 5450 2500
+Connection ~ 4450 2500
+Wire Wire Line
+	4450 2500 4450 2550
+Wire Wire Line
+	2500 950  3400 950 
+Wire Wire Line
+	3400 950  3400 1800
+Connection ~ 3400 1800
+$EndSCHEMATC
